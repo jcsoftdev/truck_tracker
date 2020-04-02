@@ -1,0 +1,72 @@
+// variables de colores
+$primary-color:#04befe ;
+$secondary-color:#3d5af1 ;
+$danger-color:#ff0844 ;
+$danger-secondary-color:#ffb199 ;
+
+.button {
+  font: inherit;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid $primary-color;
+  background: $primary-color;
+  border-radius: 4px;
+  background-image: linear-gradient(to right, $secondary-color 0%, $primary-color 100%);
+  color: white;
+  cursor: pointer;
+  margin-right: 1rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: all .25s ease-in-out;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:hover,
+.button:active {
+  background: $secondary-color;
+  border-color: $secondary-color;
+}
+
+.button--inverse {
+  background: transparent;
+  color: $secondary-color;
+  border-color: $secondary-color;
+}
+
+.button--inverse:hover,
+.button--inverse:active {
+  color: white;
+  border-color: $primary-color;
+  background-image: linear-gradient(to right, $secondary-color 0%, $primary-color 100%);
+}
+
+.button--danger {
+  background:$danger-secondary-color;
+  border-color:$danger-secondary-color;
+  background-image: linear-gradient(to right,$danger-color 0%,$danger-secondary-color 100%);
+}
+
+.button--danger:hover,
+.button--danger:active {
+  background:$danger-color;
+  border-color:$danger-color;
+}
+
+.button:disabled,
+.button:hover:disabled,
+.button:active:disabled {
+  background: #ccc;
+  color: #979797;
+  border-color: #ccc;
+  cursor: not-allowed;
+}
+
+.button--small {
+  font-size: 0.8rem;
+}
+
+.button--big {
+  font-size: 1.5rem;
+}

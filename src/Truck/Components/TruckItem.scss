@@ -1,0 +1,76 @@
+/* // colores
+// [#dbdcd7 , #dddcd7 , #e2c9cc , #e7627d , #b8235a , #801357 , #3d1635 , #1c1a27 ] */
+
+.truck-item {
+  margin: 1rem;
+  width: calc(45% - 2rem);
+  min-width: 17.5rem;
+  
+}
+
+.truck-item__card {
+  --primary: #3d1635;
+  --secondary: #801357;
+
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  padding: 1rem;
+  color: white;
+  background: linear-gradient(to right, var(--primary) 0%, var(--secondary) 100%);
+  transition: all 0.26s,--primary 0.36s, --secondary 0.36s;
+  // transition: --primary 2s, --secondary 2s;
+}
+
+.truck-item__card:hover,
+.truck-item__card:active {
+  --primary: #b8235a;
+  --secondary: #e2c9cc;
+  background: linear-gradient(to right, var(--primary) 0%, var(--secondary) 100%);
+}
+
+.truck-item__content {
+  padding: 0;
+}
+
+.truck-item__image {
+  width: 4rem;
+  height: 4rem;
+  margin-right: 1rem;
+}
+
+.truck-item__info h2 {
+  font-size: 1.5rem;
+  margin: 0 0 0.5rem 0;
+  font-weight: normal;
+  color: #e2c9cc;
+}
+
+.truck-item:hover h2,
+.truck-item:active h2,
+.truck-item:hover h3,
+.truck-item:active h3 {
+  color: #3d1635;
+}
+
+.truck-item__info h3 {
+  margin: 0;
+}
+
+
+.trucker-item__modal-content {
+  padding: 0;
+}
+
+.trucker-item__modal-actions {
+  text-align: right;
+}
+
+.map-container{
+  height: 15rem;
+  width: 100%;
+}
